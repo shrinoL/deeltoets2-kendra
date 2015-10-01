@@ -1,0 +1,379 @@
+@media screen and (min-width:400px) {
+
+html {
+    background: #FFCC00;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Helvetica', sans-serif;}
+
+body {
+    text-align: justify;
+    font-size: 0.8em;
+    line-height: 140%;
+     padding: 5%;
+    background: white;
+    border: 2px solid #B48209;
+    border-radius: 10px;
+}
+
+
+p:first-of-type {
+    text-align: center;
+}
+
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #FFCC00;
+}
+
+h1 {
+    color: #B48209;
+    text-shadow: 4px 5px 5px #CCC;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h2 {
+    color: #FFCC00;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+h3 {
+    color: #B48209;
+    font-size: 1em;
+}
+
+em {
+    display: block;
+    font-family: serif;
+    border: 1px solid #FFCC00;
+    padding: 20px;
+
+}
+
+/* navigatie start hier */
+nav
+{
+    text-align: center;
+    border: 2px solid #B48209;
+    border-radius: 10px;
+    background: #FFCC00;
+    padding: 1%;
+}
+
+
+nav > ul
+{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+
+
+}
+
+nav a {
+    width: 100px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FFCC00;
+}
+
+nav:hover {
+    transition: background 0.3s ease;
+    background: white;
+    color: #FFCC00;
+}
+
+
+li {
+    display: block;
+
+}
+
+
+#credits {
+    font-size: 0.3em;
+
+}
+
+#credits > h2 {
+    display: none;
+}
+
+form:first-of-type {
+    margin-left: 15%;
+}
+
+.to-profile {
+    display: none;
+}
+
+/* flexbox start hier */
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+order: -1;
+}
+
+header > p {
+    order: 2;
+}
+
+img:first-of-type {
+    order: -2;
+    transform: scale(0.5);
+    display: none;
+
+}
+
+nav {
+    order: 3;
+}
+
+
+header > form {
+    order: 1;
+    transform: scale(0.7);
+    margin: 5%;
+}
+
+/*flexbox start hier */
+    article {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    article > header {
+        order: 1;
+    }
+
+    article > section {
+        order: 2;
+    }
+
+    article > footer {
+        order: 3;
+        font-size: 0.7em;
+        line-height: 50%;
+
+        padding-bottom: 2%;
+    }
+
+
+/* flexbox begint hier */
+.related {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.related > article > header {
+    order: 1;
+    line-height: 15%;
+}
+
+.related > article > p {
+    order: 2;
+}
+
+.related > article {
+    border: 1px solid #B48209;
+    padding: 4%;
+    border-radius: 5px;
+    margin: 3%;
+
+}
+
+article > header > h1:first-of-type {
+    border-bottom: dotted 1px #B48209;
+    padding-bottom: 5%;
+}
+
+aside > section > h2 {
+    border-top: dotted 1px #B48209;
+    padding-top: 4%;
+}
+
+    aside {
+        float: left;
+    }
+
+
+
+    #search {
+    display: none;
+}
+
+aside > section > article {
+    border-bottom: 1px solid #B48209;
+    padding: 4%;
+
+}
+
+    #sitemap {
+        display: none;
+    }
+
+
+#about {
+    order: 1;
+    transform: scale(0.8);
+}
+
+#contact {
+    order: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* breakpoint start hier */
+@media screen and (min-width:680px) {
+
+form:first-of-type {
+    margin-left: 35%;
+    transform: scale(1.0);
+}
+
+/* navigatie 2 */
+nav {
+    text-align: center;
+    border: 2px solid #B48209;
+    border-radius: 10px;
+    background: #FFCC00;
+    padding: 1%;
+}
+
+
+nav > ul
+{
+    list-style-type: none;
+    margin:0;
+    padding: 1%;
+
+}
+
+nav a {
+    width: 70px;
+    margin: 7px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FFCC00;
+}
+
+nav:hover {
+    transition: background 0.4s ease;
+    background: white;
+    color: #FFCC00;
+}
+
+
+li {
+    display: inline;}
+
+
+main {
+    display: inline-block;
+    width: 70%;
+    float: left;
+}
+
+
+
+
+ul > li > ul {
+    display: none;
+}
+
+.footer1 {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    width: 50%;
+    margin-left: 25%;
+
+}
+
+
+
+aside > section > article {
+    border: 1px solid #B48209;
+    padding: 2%;
+    border-radius: 5px;
+    margin: 3%;
+}
+
+.related > article > header {
+    line-height: 1px;
+}
+
+.related > article {
+    transform: scale(0.9);
+}
+
+
+
+main
+    {
+        margin-right: 4%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width:1050px) {
+   html {
+    background: #FFCC00;
+background-image: url("cmd.jpg");
+    margin-left: 15%;
+    margin-right: 15%;
+   }
+
+
+#about {
+    order: 1;
+    transform: scale(0.8);
+}
+
+#contact {
+    order: 2;
+}
+
+
+}
+
